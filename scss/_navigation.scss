@@ -1,0 +1,109 @@
+nav {
+    background-color:rgba($color: $main-color, $alpha: .95);
+    
+    position: sticky; 
+    top: 0;
+
+    z-index: 1;
+
+
+    #navigation{
+        width: 85%;
+        display: flex;
+        margin: 0 auto;
+        
+        ul#nav-left {
+            flex: 3;
+            display: flex;
+            li {
+        
+                a{
+                    display: block;
+                    padding: 15px 18px;
+                    min-width: 100px;
+                    color: white;
+                    text-align: center;
+                    transition: background-color .2s;
+            
+                    &:hover{
+                        background-color: $nav-bg-hover;
+                    }
+                }
+
+                &#categories {
+                    ul {
+                        position: absolute;
+                        display: none;
+
+                        li{
+                            display: block;
+                            min-width: 180px;
+
+                            a{
+                                text-align: left;
+                                background-color: rgba($color: $main-color, $alpha: .8);
+                                color:white;
+
+                                &:hover{
+                                    background-color: $nav-bg-hover;
+                                }
+                            }
+
+
+                        }
+
+                    }
+
+                    &:hover ul{
+                        display: block;
+                    }
+
+                    &:hover {
+                        background-color: $nav-bg-hover;
+                    }
+                }
+
+    
+            }
+    
+            
+        }
+
+        ul#nav-right {
+            flex: 1.2;
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+        
+                a{
+                    display: block;
+                    padding: 15px 18px;
+                    min-width: 100px;
+                    color: white;
+                    text-align: center;
+                    transition: background-color .2s;
+            
+                    &:hover{
+                        background-color: $nav-bg-hover;
+                    }
+                }
+
+                &#su {
+                    background-color: $btn-bg-color;
+                }
+    
+
+            }
+
+
+            
+           
+
+        }
+    
+    }
+
+}
+
+

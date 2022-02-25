@@ -1,0 +1,61 @@
+$main-color : #333;
+$bg-color : #f1f1f1;
+$nav-bg-hover : rgba(17, 17, 17, 0.9);
+$btn-bg-color : #DD4453;
+$post-details-color : rgb(22, 22, 22);
+$box-shadow-color : rgba(0,0,0,.2);
+$text-color : #9b9b9b;
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+
+#container {
+    width: 85%;
+    margin: 20px auto;  
+
+    display: flex;
+
+}
+
+/*
+    Navigation 
+*/
+@import "navigation.scss";
+
+
+/*
+    Main
+*/
+@import "main.scss";
+
+
+/*
+    Aside
+*/
+@import "aside.scss";
+
+
+/*
+    Footer
+*/
+@import "footer.scss";

@@ -1,0 +1,170 @@
+main {
+    flex: 3;
+
+    #blog-post-container {
+        .blog-post-card{
+            background-color: #ffffff;
+            
+            position: relative;
+
+            border-radius: 4px;
+
+            margin-bottom: 25px;
+
+            box-shadow: 0 2px 6px 2px $box-shadow-color;
+            -webkit-box-shadow: 0 2px 6px 2px $box-shadow-color;
+
+            .blog-post-head {
+                color: $main-color;
+                font-size: 30px;
+                font-weight: 600;
+                
+                display: inline-block;
+
+                transition: all .5s;
+                text-decoration: none;
+
+                padding: 18px;
+
+                &:hover {
+                    color: $btn-bg-color;
+                }
+            }
+
+            .blog-post-date{
+                position: absolute;
+                right: 25px;
+                bottom: 20px;
+
+                font-size: 12px;
+                color: $post-details-color;
+                font-weight: 400;
+                opacity: .8;
+
+                word-spacing: 1px;
+                letter-spacing: .8px;
+
+            }
+
+            .blog-post-img {
+                width: 100%;
+                max-height: 400px;
+
+                object-fit: cover;
+                object-position: center;
+
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+
+                transition: all .4s;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+
+            .blog-post-text{
+                line-height: 135%;
+                letter-spacing: .3px;
+                word-spacing: 1px;
+                
+                color: rgb(155, 155, 155);
+                font-size: 16px;
+
+                margin-bottom: 5px;
+                padding: 0 18px;    
+
+            }
+
+            .btn-container {
+                margin-top: 25px;
+                padding: 0 18px;
+
+
+                    
+                .blog-post-btn{
+                    background-color: white;
+                    color: $btn-bg-color;
+                    text-decoration: none;
+
+                    text-transform: uppercase;
+
+                    font-size: 14px;
+                    font-weight: 600;
+                        
+                    padding: 10px 14px;
+
+                    border-radius: 2px;
+                    border: 1px solid $btn-bg-color;
+
+                    transition: all .5s;
+
+                        &:hover{
+                            background-color: $btn-bg-color;
+                            border: 1px solid $btn-bg-color;
+                            color: white;
+                        }
+                    }
+                
+            }
+
+
+            .post-info {
+                color: $post-details-color;
+                opacity: .6;
+                font-size: 12px;
+                font-weight: 400;
+
+                word-spacing: 1px;
+                letter-spacing: .8px;
+
+                margin-top: 20px;
+                padding: 18px;
+                padding-top: 0;
+
+
+                a{
+                    text-decoration: inherit;
+                    opacity: .6;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .page-number-container {
+        ul {
+            display: flex;
+
+            li {
+                margin-right: 8px;
+                border: 2px solid rgba($color: $main-color, $alpha: .1);
+                border-radius: 5px;
+                a {
+                    display: inline-block;
+                    color: #777;
+                    font-weight: 600;
+                    padding: 12px 16px;
+                    transition: all .4s;
+
+                    &:hover {
+                        background-color: #666;
+                        color: white;
+                    }
+
+                    &.active {
+                        background-color: #666;
+                        color: white;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
